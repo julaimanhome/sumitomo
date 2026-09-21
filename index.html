@@ -1,1 +1,540 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bayarin Network | Portal Informasi Publik & Direktori Berita Terpercaya</title>
+    
+    <!-- Meta SEO & Keywords -->
+    <meta name="description" content="Bayarin Network - Portal direktori berita, informasi publik, UMKM, pendidikan, cuaca, dan kabar daerah terpercaya. Temukan tautan berita dan informasi terkini di sini.">
+    <meta name="keywords" content="Bayarin Network, bayarin.dpdns.org, berita update, info publik, kabar daerah, berita UMKM, berita rejang lebong, berita bengkulu">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://bayarin.dpdns.org/">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://bayarin.dpdns.org/">
+    <meta property="og:title" content="Bayarin Network | Portal Informasi Publik">
+    <meta property="og:description" content="Pusat informasi publik, portal berita regional, ekonomi rakyat, dan direktori link terpercaya.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&w=1200&q=80">
 
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Bayarin Network | Portal Informasi Publik">
+    <meta name="twitter:description" content="Direktori tautan informasi dan portal berita publik terlengkap.">
+
+    <!-- Styling Tailwind CDN & Lucide Icons -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            500: '#0284c7',
+                            600: '#0284c7',
+                            700: '#0369a1',
+                            800: '#075985',
+                            900: '#0c4a6e',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "https://bayarin.dpdns.org/#website",
+          "url": "https://bayarin.dpdns.org/",
+          "name": "Bayarin Network",
+          "description": "Portal Informasi Publik & Direktori Berita Terpercaya",
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://bayarin.dpdns.org/?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+          }
+        },
+        {
+          "@type": "CollectionPage",
+          "@id": "https://bayarin.dpdns.org/#webpage",
+          "url": "https://bayarin.dpdns.org/",
+          "name": "Direktori Berita & Informasi Publik Bayarin Network",
+          "isPartOf": { "@id": "https://bayarin.dpdns.org/#website" }
+        }
+      ]
+    }
+    </script>
+</head>
+<body class="bg-slate-50 dark:bg-slate-900 text-slate-800 dark:text-slate-100 min-h-screen flex flex-col font-sans transition-colors duration-200">
+
+    <header class="sticky top-0 z-50 backdrop-blur-md bg-white/80 dark:bg-slate-900/80 border-b border-slate-200 dark:border-slate-800 transition-colors">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <a href="#" class="flex items-center space-x-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-sky-500 to-indigo-600 flex items-center justify-center text-white shadow-md shadow-sky-500/20 group-hover:scale-105 transition-transform">
+                    <i data-lucide="newspaper" class="w-5 h-5"></i>
+                </div>
+                <div>
+                    <span class="text-xl font-bold bg-gradient-to-r from-sky-600 to-indigo-600 dark:from-sky-400 dark:to-indigo-400 bg-clip-text text-transparent">Bayarin</span>
+                    <span class="text-xs text-slate-500 dark:text-slate-400 block font-medium -mt-1">.dpdns.org</span>
+                </div>
+            </a>
+
+            <div class="flex items-center space-x-3">
+                <button id="themeToggle" aria-label="Toggle Theme" class="p-2.5 rounded-lg bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300 transition-colors">
+                    <i data-lucide="sun" class="w-5 h-5 hidden dark:block"></i>
+                    <i data-lucide="moon" class="w-5 h-5 block dark:hidden"></i>
+                </button>
+                <a href="#directory" class="hidden sm:inline-flex items-center space-x-1 px-4 py-2 text-sm font-medium text-white bg-sky-600 hover:bg-sky-700 rounded-lg shadow-sm transition-all shadow-sky-600/20">
+                    <i data-lucide="compass" class="w-4 h-4"></i>
+                    <span>Jelajahi Direktori</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow">
+        <section class="relative overflow-hidden pt-12 pb-16 bg-gradient-to-b from-sky-50/50 via-white to-slate-50 dark:from-slate-900/50 dark:via-slate-900 dark:to-slate-900 border-b border-slate-200/60 dark:border-slate-800">
+            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+                <span class="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full text-xs font-semibold bg-sky-100 dark:bg-sky-950/80 text-sky-700 dark:text-sky-300 border border-sky-200 dark:border-sky-800 mb-6">
+                    <span class="w-2 h-2 rounded-full bg-sky-500 animate-pulse"></span>
+                    <span>Portal Informasi Publik & Berita Terpadu</span>
+                </span>
+                
+                <h1 class="text-3xl sm:text-5xl font-extrabold text-slate-900 dark:text-white tracking-tight leading-tight">
+                    Pusat Informasi & Direktori Berita Terpercaya <br class="hidden sm:inline"/>
+                    <span class="bg-gradient-to-r from-sky-600 via-indigo-600 to-purple-600 bg-clip-text text-transparent">Bayarin Network</span>
+                </h1>
+                
+                <p class="mt-4 text-base sm:text-lg text-slate-600 dark:text-slate-300 max-w-2xl mx-auto">
+                    Akses cepat dan mudah ke berbagai kanal berita lokal, nasional, informasi UMKM, edukasi, politik, hingga kabar seputar Bengkulu dan Rejang Lebong.
+                </p>
+
+                <!-- Search Input Form -->
+                <div class="mt-8 max-w-2xl mx-auto">
+                    <div class="relative flex items-center">
+                        <i data-lucide="search" class="absolute left-4 w-5 h-5 text-slate-400"></i>
+                        <input type="text" id="searchInput" placeholder="Cari topik berita (contoh: UMKM, Cuaca, Rejang Lebong, PKH)..." 
+                            class="w-full pl-12 pr-10 py-4 text-base bg-white dark:bg-slate-800 border border-slate-300 dark:border-slate-700 rounded-2xl shadow-lg shadow-slate-200/50 dark:shadow-none focus:outline-none focus:ring-2 focus:ring-sky-500 dark:focus:ring-sky-400 transition-all text-slate-900 dark:text-white placeholder-slate-400">
+                        <button id="clearSearch" class="hidden absolute right-4 text-slate-400 hover:text-slate-600 dark:hover:text-slate-200">
+                            <i data-lucide="x" class="w-5 h-5"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Stats Counters -->
+                <div class="mt-10 grid grid-cols-2 sm:grid-cols-4 gap-4 max-w-3xl mx-auto">
+                    <div class="p-4 rounded-xl bg-white dark:bg-slate-800/50 border border-slate-200/80 dark:border-slate-800 shadow-sm">
+                        <p class="text-2xl font-bold text-sky-600 dark:text-sky-400" id="totalLinksCount">100+</p>
+                        <p class="text-xs text-slate-500 dark:text-slate-400 mt-0.5">Total Direktori Tautan</p>
+                    </div>
+                    <div class="p-4 rounded-xl bg-white dark:bg-slate-800/50 border border-slate-200/80 dark:border-slate-800 shadow-sm">
+                        <p class="text-2xl font-bold text-sky-600 dark:text-sky-400">100%</p>
+                        <p class="text-xs text-slate-500 dark:text-slate-400 mt-0.5">Akses Terbuka & Gratis</p>
+                    </div>
+                    <div class="p-4 rounded-xl bg-white dark:bg-slate-800/50 border border-slate-200/80 dark:border-slate-800 shadow-sm">
+                        <p class="text-2xl font-bold text-sky-600 dark:text-sky-400">SEO</p>
+                        <p class="text-xs text-slate-500 dark:text-slate-400 mt-0.5">Teroptimasi Mesin Pencari</p>
+                    </div>
+                    <div class="p-4 rounded-xl bg-white dark:bg-slate-800/50 border border-slate-200/80 dark:border-slate-800 shadow-sm">
+                        <p class="text-2xl font-bold text-sky-600 dark:text-sky-400">24/7</p>
+                        <p class="text-xs text-slate-500 dark:text-slate-400 mt-0.5">Informasi Terbarui</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="directory" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <!-- Filter Categories -->
+            <div class="flex flex-wrap items-center justify-center gap-2 mb-8" id="categoryFilters">
+                <!-- Filter buttons rendered dynamically via JS -->
+            </div>
+
+            <!-- Header Info Result -->
+            <div class="flex items-center justify-between mb-6">
+                <h2 class="text-xl font-bold text-slate-900 dark:text-white flex items-center space-x-2">
+                    <i data-lucide="layers" class="w-5 h-5 text-sky-600 dark:text-sky-400"></i>
+                    <span>Daftar Informasi & Berita</span>
+                </h2>
+                <span id="resultsCount" class="text-xs font-semibold px-2.5 py-1 rounded-full bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300">
+                    Menampilkan 0 Tautan
+                </span>
+            </div>
+
+            <!-- Cards Grid Container -->
+            <div id="linksGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <!-- Dynamic cards populated by JavaScript -->
+            </div>
+
+            <!-- Empty State -->
+            <div id="emptyState" class="hidden text-center py-16">
+                <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-slate-400">
+                    <i data-lucide="search-x" class="w-8 h-8"></i>
+                </div>
+                <h3 class="text-lg font-semibold text-slate-800 dark:text-slate-200">Tidak ada informasi ditemukan</h3>
+                <p class="text-sm text-slate-500 dark:text-slate-400 mt-1">Coba gunakan kata kunci lain dalam pencarian Anda.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800 mt-12 transition-colors">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+                <div class="flex items-center space-x-3">
+                    <div class="w-8 h-8 rounded-lg bg-sky-600 flex items-center justify-center text-white font-bold text-sm">
+                        B
+                    </div>
+                    <div>
+                        <p class="text-sm font-semibold text-slate-900 dark:text-white">Bayarin Network &copy; 2026</p>
+                        <p class="text-xs text-slate-500 dark:text-slate-400">Direktori Portal Berita dan Informasi Publik Terbuka</p>
+                    </div>
+                </div>
+
+                <div class="flex items-center space-x-6 text-xs text-slate-500 dark:text-slate-400">
+                    <a href="https://bayarin.dpdns.org/" class="hover:text-sky-600 dark:hover:text-sky-400 transition-colors">Utama</a>
+                    <a href="#directory" class="hover:text-sky-600 dark:hover:text-sky-400 transition-colors">Direktori</a>
+                    <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="hover:text-sky-600 dark:hover:text-sky-400 transition-colors">GitHub Hosted</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Links raw dataset parsed from request
+        const rawLinks = [
+            { url: "https://wiki.addmyurls.com/how-to-get-down-a-abode-line-in-your-garage-3866945491751114839", title: "info RT RW" },
+            { url: "https://wiki.bookmarksmyweb.com/5-tips-for-start-a-home-business-organisation-38669454101751114840", title: "kesenian daerah" },
+            { url: "https://wiki.nexuswoot.com/10-tips-for-start-a-young-line-of-work-that-youll-like-youd--3866945451751114837", title: "berita update" },
+            { url: "https://wiki.addmeintopsite.com/how-to-depart-a-home-stage-business-and-be-your-have-honcho-3866945421751114836", title: "berita inspiratif" },
+            { url: "https://wiki.prospectuso.com/6-prosperous-and-cheap-shipway-to-offset-a-rest-home-concern-3866945411751114837", title: "headline news" },
+            { url: "https://wiki.bookmarkingtoday.com/how-to-starting-a-commercial-enterprise-from-house-3866945431751114838", title: "kabar curup" },
+            { url: "https://wiki.brightfrenzy.com/what-is-the-correct-business-enterprise-for-me-3866945471751114837", title: "berita terbaru" },
+            { url: "https://wiki.alianzy-businesspartnership.com/how-to-reach-money-from-place-with-a-shopify-business-organi-3866945491751114840", title: "info cuaca" },
+            { url: "https://wiki.ascendio-corporate.com/5-slipway-to-bug-out-a-habitation-business-concern-of-your-h-3866945431751114839", title: "berita pilihan" },
+            { url: "https://wiki.mellowideas.com/5-ways-to-set-off-a-domicile-line-of-work-of-your-own-3866945431751114837", title: "berita pariwisata" },
+            { url: "https://wiki.nexuswoot.com/11-reasons-why-your-rest-home-patronage-should-be-a-winner-38669454101751114837", title: "harga sembako" },
+            { url: "https://wiki.addmeintop10.com/50-charles-herbert-best-websites-for-bloggers-what-to-web-lo-38669454101751114838", title: "info pemilu" },
+            { url: "https://wiki.fusionzap.com/12-shipway-to-pop-out-a-job-from-place-3866945451751114839", title: "media online terpercaya" },
+            { url: "https://wiki.prospectuso.com/8-ways-to-kickoff-a-house-business-organisation-for-your-com-3866945461751114838", title: "harga sembako" },
+            { url: "https://wiki.sortprofit-business.com/4-slipway-to-human-body-a-place-patronage-from-the-solace-of-38669454101751114840", title: "info pemerintahan" },
+            { url: "https://wiki.skyflypro.com/the-peak-5-bcas-of-2018-3866945481751114839", title: "berita PKH" },
+            { url: "https://wiki.brightfrenzy.com/10-signs-you-ask-a-lowly-commercial-enterprise-ecological-ni-3866945411751114837", title: "berita update" },
+            { url: "https://wiki.evergreen-friends.com/3-concern-ideas-for-the-sassy-home-founded-enterpriser-3866945461751114840", title: "berita pelajar" },
+            { url: "https://wiki.mydesign-tool.com/for-every-twenty-four-hours-profits-how-to-select-your-busin-3866945441751114837", title: "info wisata lokal" },
+            { url: "https://wiki.mellowideas.com/10-reasons-you-should-get-go-a-base-business-sector-3866945481751114839", title: "berita curup" },
+            { url: "https://wiki.top-fully.com/6-rightful-plate-clientele-inspirations-that-show-its-neer-e-3866945481751114840", title: "info pemilu" },
+            { url: "https://wiki.mydesign-tool.com/50-better-websites-for-bloggers-what-to-blog-about-how-a-lot-3866945411751114839", title: "berita karang taruna" },
+            { url: "https://wiki.dexitex.com/tips-for-starting-a-outback-concern-internal-byplay-3866945451751114840", title: "berita pasar" },
+            { url: "https://wiki.bookmarkingtoday.com/4-shipway-to-establish-a-internal-business-organisation-from-3866945481751114839", title: "berita nasional" },
+            { url: "https://wiki.bettaso.com/5-tips-for-start-a-household-line-of-work-3866945471751114838", title: "berita ekonomi rakyat" },
+            { url: "https://wiki.machir-digitalmarketing.com/quintet-ways-to-pass-water-your-house-job-more-fruitful-3866945421751114837", title: "berita APBD" },
+            { url: "https://wiki.just-server.net/5-substance-tips-for-with-success-start-a-home-plate-occupat-3866945441751114837", title: "kabar siswa" },
+            { url: "https://wiki.bookmarkdiscover.com/5-ways-to-perplex-started-with-a-interior-business-organizat-3866945461751114838", title: "info cuaca" },
+            { url: "https://wiki.theappcode.net/basketball-team-shipway-to-pull-in-your-national-business-en-3866945441751114838", title: "berita ekonomi rakyat" },
+            { url: "https://wiki.prwhero.com/what-is-a-concern-base-job-3866945481751114838", title: "berita liga indonesia" },
+            { url: "https://wiki.rocketmaxx.com/10-signs-you-take-a-low-business-organization-recession-to-p-3866945431751114837", title: "info cuaca" },
+            { url: "https://wiki.addtopurl.com/12-rest-home-occupation-ideas-that-are-reaping-slews-of-bene-3866945411751114837", title: "berita karang taruna" },
+            { url: "https://wiki.addmeintopsite.com/5-tips-for-successful-online-businesses-3866945421751114839", title: "berita politik" },
+            { url: "https://wiki.toppinvestors.com/how-to-earn-money-from-dwelling-house-with-a-shopify-busines-3866945491751114839", title: "berita sepak bola" },
+            { url: "https://wiki.skyflypro.com/how-to-showtime-a-internal-business-concern-what-you-call-fo-3866945411751114836", title: "berita ekonomi rakyat" },
+            { url: "https://wiki.screensflare.com/how-to-commence-a-line-from-plate-that-makes-you-money-3866945461751114837", title: "berita desa" },
+            { url: "https://wiki.addtopurl.com/10-reasons-to-shuffle-your-business-organization-household-b-3866945481751114840", title: "info UMKM" },
+            { url: "https://wiki.cntechapp.com/is-business-home-founded-10-things-to-know-3866945491751114841", title: "berita internasional" },
+            { url: "https://wiki.bookforme-store.com/4-well-heeled-ways-to-commencement-your-possess-patronage-3866945411751114839", title: "berita organisasi lokal" },
+            { url: "https://wiki.addmeintopsite.com/how-to-self-release-a-base-business-internet-site-3866945471751114837", title: "berita sekolah" },
+            { url: "https://wiki.gift-boxs.com/a-beginners-templet-to-business-sector-abode-byplay-3866945411751114838", title: "berita wisata rejang lebong" },
+            { url: "https://wiki.beadvices.net/how-to-do-a-home-base-business-12-lessons-conditioned-from-a-3866945461751114840", title: "berita kuliner lokal" },
+            { url: "https://wiki.lintense.com/12-abode-line-ideas-that-are-reaping-mountain-of-benefits-3866945411751114838", title: "media aspirasi" },
+            { url: "https://wiki.gift-boxs.com/the-ultimate-guide-to-creating-a-habitation-job-3866945491751114840", title: "berita edukasi" },
+            { url: "https://wiki.socialbookmarkkey.com/10-signs-you-necessitate-a-humble-line-of-work-ecological-ni-3866945471751114836", title: "berita banjir" },
+            { url: "https://wiki.gemstonic.com/50-outflank-websites-for-bloggers-what-to-blog-about-how-a-g-3866945461751114838", title: "berita kebencanaan" },
+            { url: "https://wiki.whelex.com/business-concern-on-the-cyberspace-is-a-real-chance-3866945491751114838", title: "kabar hari ini" },
+            { url: "https://wiki.beadvices.net/10-reasons-why-home-based-businesses-are-ameliorate-than-the-3866945441751114838", title: "info bengkulu" },
+            { url: "https://wiki.dentalclinicuk.com/the-start-up-journeying-to-patronage-abode-business-sector-3866945451751114838", title: "kabar hari ini" },
+            { url: "https://wiki.prospectuso.com/3-clientele-ideas-for-the-hurt-home-based-entrepreneur-3866945441751114838", title: "kabar bengkulu" },
+            { url: "https://wiki.foodbagtoday.com/how-to-be-successful-with-a-house-business-3866945411751114840", title: "berita UMKM" },
+            { url: "https://wiki.1bookmarking.com/the-on-key-price-of-start-a-business-sector-3866945441751114836", title: "berita ekonomi rakyat" },
+            { url: "https://wiki.sortprofit-business.com/how-to-take-to-the-woods-a-successful-business-organization--3866945411751114838", title: "media pendidikan" },
+            { url: "https://wiki.alianzy-businesspartnership.com/10-reasons-you-should-jump-a-home-plate-business-enterprise-3866945441751114837", title: "berita penting" },
+            { url: "https://wiki.beadvices.net/if-youre-intelligent-of-starting-a-rest-home-patronage-3866945491751114840", title: "berita ekonomi" },
+            { url: "https://wiki.whelex.com/the-start-up-travel-to-business-place-line-3866945481751114837", title: "kabar viral" },
+            { url: "https://wiki.weseoco.com/what-is-a-business-organization-home-concern-3866945481751114840", title: "info kuliner" },
+            { url: "https://wiki.toppinvestors.com/5-stairs-to-initiate-your-business-as-an-online-freelance-ad-3866945441751114839", title: "info terkini" },
+            { url: "https://wiki.ascendio-corporate.com/7-quick-shipway-that-pocket-sized-businesses-terminate-turn--3866945461751114840", title: "kabar bengkulu" },
+            { url: "https://wiki.just-server.net/5-all-important-tips-for-successfully-start-a-internal-conce-3866945431751114839", title: "berita kecelakaan" },
+            { url: "https://wiki.addmeintopsite.com/12-ways-to-commence-a-business-concern-from-internal-3866945471751114837", title: "kabar rejang lebong" },
+            { url: "https://wiki.bravelight.net/31-business-sector-internal-business-enterprise-ideas-to-get-3866945471751114839", title: "berita bupati" },
+            { url: "https://wiki.gift-boxs.com/11-reasons-wherefore-your-household-commercial-enterprise-sh-3866945491751114838", title: "berita nasional" },
+            { url: "https://wiki.addthismarks.com/is-your-household-byplay-operative-for-you-or-against-you-3866945421751114837", title: "berita terbaru curup" },
+            { url: "https://wiki.letsbookmarktoday.com/circus-tent-10-business-enterprise-place-businesses-better-s-3866945481751114841", title: "kabar bengkulu" },
+            { url: "https://wiki.addtopwebsite.com/4-leisurely-shipway-to-protrude-your-have-business-enterpris-3866945451751114837", title: "informasi publik" },
+            { url: "https://wiki.weseoco.com/a-beginners-steer-to-business-concern-dwelling-house-concern-3866945411751114839", title: "kabar rejang lebong" },
+            { url: "https://wiki.just-server.net/how-to-be-successful-with-a-internal-business-organization-3866945421751114837", title: "info pemilu" },
+            { url: "https://wiki.theappcode.net/website-design-3-things-you-should-see-when-introduction-you-3866945481751114838", title: "berita luar negeri" },
+            { url: "https://wiki.prospectuso.com/how-to-trebuchet-your-occupation-from-obscureness-to-renown--3866945471751114838", title: "suara rakyat" },
+            { url: "https://wiki.prospectuso.com/creating-commercial-enterprise-household-businesses-from-hob-3866945431751114838", title: "berita kebencanaan" },
+            { url: "https://wiki.multipurpose-wapuula.com/just-about-significant-points-we-consider-completely-byplay--38669454101751114840", title: "info wisata lokal" },
+            { url: "https://wiki.machir-digitalmarketing.com/the-ultimate-lead-to-creating-a-nursing-home-patronage-3866945421751114838", title: "headline news" },
+            { url: "https://wiki.bettaso.com/3-ways-to-wave-as-an-enterpriser-in-the-mart-3866945471751114839", title: "info lalu lintas" },
+            { url: "https://wiki.gift-boxs.com/3-promptly-ways-to-arrive-traffic-for-your-business-3866945451751114839", title: "berita kesehatan" },
+            { url: "https://wiki.brandwoot.com/deuce-ace-slipway-to-outset-a-menage-concern-with-first-gear-3866945451751114839", title: "berita pemuda" },
+            { url: "https://wiki.brightfrenzy.com/5-bare-ideas-to-create-your-own-abode-stage-business-3866945481751114838", title: "media online terpercaya" },
+            { url: "https://wiki.just-server.net/is-concern-home-based-10-things-to-make-out-3866945461751114838", title: "berita budaya" },
+            { url: "https://wiki.microalltech.com/how-to-trebucket-your-business-enterprise-from-reconditeness-3866945461751114840", title: "media aspirasi" },
+            { url: "https://wiki.mellowideas.com/10-signs-you-postulate-a-little-business-organisation-recess-3866945471751114835", title: "kabar viral" },
+            { url: "https://wiki.1bookmarking.com/3-shipway-to-brandish-as-an-entrepreneur-in-the-marketplace-38669454101751114838", title: "berita sosial" },
+            { url: "https://wiki.brushsharp.com/how-to-name-money-online-with-a-dwelling-house-concern-3866945471751114837", title: "kabar terbaru indonesia" },
+            { url: "https://wiki.weseoco.com/tips-for-starting-a-remote-control-commercial-enterprise-int-3866945451751114838", title: "kabar bengkulu" },
+            { url: "https://wiki.addmyurls.com/how-to-spend-a-penny-money-online-with-a-home-line-of-work-3866945431751114837", title: "info rejang lebong" },
+            { url: "https://wiki.mellowideas.com/7-interesting-domicile-stage-business-ideas-for-2019-that-ar-38669454101751114839", title: "berita karang taruna" },
+            { url: "https://wiki.mydesign-tool.com/what-is-a-stage-business-national-business-3866945431751114836", title: "media lokal" },
+            { url: "https://wiki.constico.com/50-scoop-websites-for-bloggers-what-to-web-log-about-how-ver-3866945451751114839", title: "berita viral" },
+            { url: "https://wiki.addthismarks.com/how-to-spell-your-national-business-dim-into-a-winner-38669454101751114840", title: "berita internasional" },
+            { url: "https://wiki.sortprofit-business.com/homemade-occupation-ideas-that-anyone-lav-uprise-3866945421751114837", title: "berita karang taruna" },
+            { url: "https://wiki.1bookmarking.com/3-business-organisation-ideas-for-the-hurt-home-based-enterp-38669454101751114839", title: "media pendidikan" },
+            { url: "https://wiki.ascendio-corporate.com/the-unmatched-mystery-to-construction-a-successful-home-base-3866945411751114839", title: "berita inspiratif" },
+            { url: "https://wiki.microalltech.com/10-reasons-to-take-a-leak-your-commercial-enterprise-dwellin-3866945431751114835", title: "berita APBD" },
+            { url: "https://wiki.manufax.net/how-to-showtime-a-dwelling-house-business-in-your-service-de-3866945431751114838", title: "berita terbaru curup" },
+            { url: "https://wiki.sbranker.com/5-well-heeled-slipway-to-work-millions-with-a-business-secto-3866945421751114839", title: "berita viral" },
+            { url: "https://wiki.just-server.net/the-double-dyed-guide-on-to-starting-your-ain-patronage-3866945421751114838", title: "berita update" },
+            { url: "https://wiki.clinicalkeynote.com/the-5-better-and-mop-up-ways-to-start-out-a-plate-line-of-wo-3866945421751114837", title: "info terkini" },
+            { url: "https://wiki.microalltech.com/how-to-be-successful-with-a-national-patronage-38669454101751114838", title: "berita guru" },
+            { url: "https://wiki.clinicalpsychologistme.com/how-to-set-out-a-line-from-internal-3866945451751114836", title: "berita transportasi" },
+            { url: "https://wiki.bookmarksites.com/how-to-relieve-oneself-money-online-with-a-dwelling-byplay-3866945441751114839", title: "berita pasar" },
+            { url: "https://wiki.addtopurl.com/the-grandness-of-elite-media-for-businesses-3866945471751114837", title: "info bantuan sosial" },
+            { url: "https://wiki.bookmarkclup.com/how-to-set-about-a-business-organisation-from-menage-3866945481751114840", title: "berita kuliner lokal" },
+            { url: "https://wiki.gift-boxs.com/5-essential-tips-for-successfully-start-a-base-job-3866945421751114839", title: "berita kuliner lokal" },
+            { url: "https://wiki.mydesign-tool.com/5-wide-eyed-ideas-to-make-your-possess-home-plate-business-o-3866945451751114837", title: "berita teknologi" },
+            { url: "https://wiki.gift-boxs.com/5-tips-for-starting-a-plate-business-3866945411751114838", title: "headline news" },
+            { url: "https://wiki.fusionzap.com/how-to-farm-a-successful-interior-job-with-limited-dollars-3866945431751114837", title: "info pemerintahan" },
+            { url: "https://wiki.prrush.com/how-to-begin-a-family-stage-business-and-be-your-have-party--3866945441751114837", title: "info UMKM" },
+            { url: "https://wiki.1bookmarking.com/how-to-do-a-habitation-business-12-lessons-conditioned-from--3866945431751114838", title: "berita politik" },
+            { url: "https://wiki.toppinvestors.com/5-steps-to-bulge-your-clientele-as-an-online-independent-adv-3866945481751114839", title: "berita pilihan" },
+            { url: "https://wiki.thefishbowled.com/the-clear-5-bcas-of-2018-3866945441751114835", title: "berita banjir" },
+            { url: "https://wiki.brandwoot.com/the-staring-steer-to-starting-your-have-patronage-3866945421751114838", title: "berita luar negeri" },
+            { url: "https://wiki.addmyurls.com/how-to-role-home-plate-businesses-to-construct-a-successful--3866945461751114839", title: "headline news" },
+            { url: "https://wiki.1bookmarking.com/6-loose-and-inexpensive-slipway-to-pop-out-a-plate-occupatio-3866945411751114838", title: "info lalu lintas" },
+            { url: "https://wiki.addtopwebsite.com/fresh-shipway-to-take-money-with-referrals-3866945451751114838", title: "berita lokal" },
+            { url: "https://wiki.moz-news.com/the-pinnacle-10-qualities-that-have-for-an-awesome-patronage-3866945491751114837", title: "media aspirasi" },
+            { url: "https://wiki.letsbookmarktoday.com/5-inspirational-stories-of-hoi-polloi-who-started-their-have-3866945491751114840", title: "berita wisata rejang lebong" },
+            { url: "https://wiki.dentalclinicuk.com/how-to-earn-money-with-a-habitation-commercial-enterprise-in-3866945451751114837", title: "berita curup" },
+            { url: "https://wiki.extraordinarz.com/if-youre-thinking-of-start-a-abode-job-3866945431751114837", title: "berita kuliner lokal" },
+            { url: "https://wiki.prrush.com/4-well-fixed-shipway-to-kickoff-a-home-job-founded-on-your-i-3866945491751114839", title: "media aspirasi" },
+            { url: "https://wiki.bookmarksites.com/web-site-design-3-things-you-should-view-when-entry-your-int-3866945441751114838", title: "info bengkulu" },
+            { url: "https://wiki.clinicalpsychologistme.com/5-ways-to-contract-started-with-a-base-clientele-38669454101751114839", title: "berita kebencanaan" },
+            { url: "https://wiki.just-green.net/what-is-the-justly-commercial-enterprise-for-me-38669454101751114839", title: "suara rakyat" },
+            { url: "https://wiki.addmyurls.com/10-reasons-you-should-kickoff-a-home-base-business-organisat-3866945461751114839", title: "berita UMKM" },
+            { url: "https://wiki.cntechapp.com/12-slipway-to-start-up-a-line-of-work-from-household-3866945461751114839", title: "berita desa" },
+            { url: "https://wiki.bookmarkdiscover.com/why-the-family-patronage-industry-is-stentorian-3866945491751114839", title: "berita pilihan" },
+            { url: "https://wiki.top-fully.com/6-dead-on-target-house-business-concern-inspirations-that-di-38669454101751114837", title: "berita budaya lokal" },
+            { url: "https://wiki.nodeliverances.com/11-reasons-why-your-family-job-should-be-a-achiever-3866945481751114839", title: "berita ekonomi rakyat" },
+            { url: "https://wiki.bettaso.com/how-to-feed-a-successful-clientele-family-occupation-10-step-3866945471751114839", title: "berita kecelakaan" },
+            { url: "https://wiki.nexuswoot.com/homemade-byplay-ideas-that-anyone-dismiss-uprise-3866945461751114839", title: "berita sekolah" },
+            { url: "https://wiki.nexuswoot.com/8-slipway-to-commence-a-plate-patronage-for-your-business-or-3866945431751114839", title: "info kecamatan" },
+            { url: "https://wiki.nodeliverances.com/take-up-your-ain-business-organization-with-these-5-simpleto-3866945471751114838", title: "berita pariwisata" },
+            { url: "https://wiki.sbranker.com/6-reasons-to-depart-a-place-business-sector-now-3866945441751114839", title: "berita rejang lebong" },
+            { url: "https://wiki.evergreen-friends.com/how-to-lead-a-successful-clientele-dwelling-house-occupation-3866945461751114838", title: "headline news" },
+            { url: "https://wiki.prospectuso.com/start-your-possess-business-enterprise-with-these-5-unsubdiv-3866945421751114835", title: "berita masyarakat" },
+            { url: "https://wiki.prospectuso.com/7-interesting-national-patronage-ideas-for-2019-that-are-wel-3866945491751114838", title: "berita pelajar" },
+            { url: "https://wiki.bookmarksites.com/7-nimble-shipway-that-little-businesses-send-away-suit-stand-3866945451751114838", title: "media bengkulu" },
+            { url: "https://wiki.prrush.com/how-to-be-successful-with-a-plate-line-3866945471751114838", title: "berita update" },
+            { url: "https://wiki.cntechapp.com/a-beginners-lead-to-business-organization-nursing-home-line--3866945421751114838", title: "berita internasional" },
+            { url: "https://wiki.alianzy-businesspartnership.com/5-inspirational-stories-of-hoi-polloi-who-started-their-have-38669454101751114838", title: "berita pelajar" },
+            { url: "https://wiki.constico.com/for-every-solar-day-profits-how-to-aim-your-commercial-enter-3866945491751114838", title: "berita pendidikan" },
+            { url: "https://wiki.bookmarkclup.com/concern-on-the-internet-is-a-existent-opportunity-3866945441751114837", title: "berita nasional" }
+        ];
+
+        const categoriesMap = {
+            "Semua": "all",
+            "Berita & Utama": ["berita", "kabar", "headline", "update", "terbaru", "pilihan", "penting"],
+            "Regional & Bengkulu": ["bengkulu", "curup", "rejang lebong", "desa", "kecamatan", "rt rw"],
+            "Ekonomi & UMKM": ["ekonomi", "umkm", "sembako", "pasar", "bisnis", "job"],
+            "Pendidikan & Pemuda": ["sekolah", "pelajar", "siswa", "pendidikan", "karang taruna", "pemuda", "guru"],
+            "Info & Kemasyarakatan": ["pemilu", "pkh", "cuaca", "bantuan", "sosial", "kebencanaan", "banjir", "aspirasi", "pemerintahan", "publik", "lalu lintas", "kecelakaan", "transportasi"]
+        };
+
+        function assignCategory(title) {
+            const lowerTitle = title.toLowerCase();
+            if (lowerTitle.includes("bengkulu") || lowerTitle.includes("curup") || lowerTitle.includes("rejang lebong") || lowerTitle.includes("desa") || lowerTitle.includes("kecamatan") || lowerTitle.includes("rt rw")) {
+                return "Regional & Bengkulu";
+            }
+            if (lowerTitle.includes("ekonomi") || lowerTitle.includes("umkm") || lowerTitle.includes("sembako") || lowerTitle.includes("pasar")) {
+                return "Ekonomi & UMKM";
+            }
+            if (lowerTitle.includes("sekolah") || lowerTitle.includes("pelajar") || lowerTitle.includes("siswa") || lowerTitle.includes("pendidikan") || lowerTitle.includes("karang taruna") || lowerTitle.includes("pemuda") || lowerTitle.includes("guru")) {
+                return "Pendidikan & Pemuda";
+            }
+            if (lowerTitle.includes("pemilu") || lowerTitle.includes("pkh") || lowerTitle.includes("cuaca") || lowerTitle.includes("bantuan") || lowerTitle.includes("sosial") || lowerTitle.includes("kebencanaan") || lowerTitle.includes("banjir") || lowerTitle.includes("aspirasi") || lowerTitle.includes("pemerintahan") || lowerTitle.includes("publik") || lowerTitle.includes("lalu lintas") || lowerTitle.includes("kecelakaan")) {
+                return "Info & Kemasyarakatan";
+            }
+            return "Berita & Utama";
+        }
+
+        // Enrich link items
+        const formattedLinks = rawLinks.map((item, idx) => ({
+            id: idx,
+            url: item.url,
+            title: item.title.charAt(0).toUpperCase() + item.title.slice(1),
+            category: assignCategory(item.title),
+            domain: new URL(item.url).hostname
+        }));
+
+        let activeCategory = "Semua";
+        let searchQuery = "";
+
+        document.addEventListener('DOMContentLoaded', () => {
+            lucide.createIcons();
+            document.getElementById('totalLinksCount').innerText = formattedLinks.length;
+            
+            renderCategoryFilters();
+            renderGrid();
+
+            // Search input listener
+            const searchInput = document.getElementById('searchInput');
+            const clearBtn = document.getElementById('clearSearch');
+
+            searchInput.addEventListener('input', (e) => {
+                searchQuery = e.target.value.toLowerCase().trim();
+                clearBtn.classList.toggle('hidden', searchQuery.length === 0);
+                renderGrid();
+            });
+
+            clearBtn.addEventListener('click', () => {
+                searchInput.value = '';
+                searchQuery = '';
+                clearBtn.classList.add('hidden');
+                renderGrid();
+            });
+
+            // Dark Mode Toggle
+            const themeToggle = document.getElementById('themeToggle');
+            themeToggle.addEventListener('click', () => {
+                document.documentElement.classList.toggle('dark');
+            });
+        });
+
+        function renderCategoryFilters() {
+            const container = document.getElementById('categoryFilters');
+            const categories = ["Semua", "Berita & Utama", "Regional & Bengkulu", "Ekonomi & UMKM", "Pendidikan & Pemuda", "Info & Kemasyarakatan"];
+
+            container.innerHTML = categories.map(cat => {
+                const isActive = cat === activeCategory;
+                return `
+                    <button onclick="selectCategory('${cat}')" 
+                        class="px-4 py-2 text-xs sm:text-sm font-medium rounded-xl transition-all duration-150 ${
+                            isActive 
+                                ? 'bg-sky-600 text-white shadow-md shadow-sky-600/30' 
+                                : 'bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700/80 border border-slate-200 dark:border-slate-800'
+                        }">
+                        ${cat}
+                    </button>
+                `;
+            }).join('');
+        }
+
+        function selectCategory(cat) {
+            activeCategory = cat;
+            renderCategoryFilters();
+            renderGrid();
+        }
+
+        function renderGrid() {
+            const grid = document.getElementById('linksGrid');
+            const emptyState = document.getElementById('emptyState');
+            const resultsCount = document.getElementById('resultsCount');
+
+            // Filter logic
+            const filtered = formattedLinks.filter(item => {
+                const matchesCat = activeCategory === "Semua" || item.category === activeCategory;
+                const matchesSearch = item.title.toLowerCase().includes(searchQuery) || 
+                                      item.domain.toLowerCase().includes(searchQuery) ||
+                                      item.category.toLowerCase().includes(searchQuery);
+                return matchesCat && matchesSearch;
+            });
+
+            resultsCount.innerText = `Menampilkan ${filtered.length} Tautan`;
+
+            if (filtered.length === 0) {
+                grid.innerHTML = '';
+                emptyState.classList.remove('hidden');
+                return;
+            }
+
+            emptyState.classList.add('hidden');
+
+            grid.innerHTML = filtered.map(item => `
+                <article class="group relative bg-white dark:bg-slate-800/90 rounded-2xl p-5 border border-slate-200/80 dark:border-slate-800 hover:border-sky-300 dark:hover:border-sky-700/60 shadow-sm hover:shadow-xl transition-all duration-200 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between gap-2 mb-3">
+                            <span class="inline-flex items-center text-[11px] font-semibold px-2.5 py-0.5 rounded-md bg-sky-50 dark:bg-sky-950 text-sky-700 dark:text-sky-300 border border-sky-100 dark:border-sky-900">
+                                ${item.category}
+                            </span>
+                            <button onclick="copyToClipboard('${item.url}')" title="Salin Link" class="text-slate-400 hover:text-sky-600 dark:hover:text-sky-400 p-1.5 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-700 transition-colors">
+                                <i data-lucide="copy" class="w-4 h-4"></i>
+                            </button>
+                        </div>
+                        
+                        <h3 class="text-lg font-bold text-slate-800 dark:text-slate-100 group-hover:text-sky-600 dark:group-hover:text-sky-400 transition-colors line-clamp-2">
+                            ${item.title}
+                        </h3>
+                        
+                        <p class="text-xs text-slate-400 dark:text-slate-500 mt-1 truncate">
+                            <i data-lucide="globe" class="w-3.5 h-3.5 inline mr-1 -mt-0.5"></i>${item.domain}
+                        </p>
+                    </div>
+
+                    <div class="mt-5 pt-3 border-t border-slate-100 dark:border-slate-700/50 flex items-center justify-between">
+                        <span class="text-xs font-medium text-slate-500 dark:text-slate-400 group-hover:text-slate-700 dark:group-hover:text-slate-200 transition-colors">
+                            Buka Artikel
+                        </span>
+                        <a href="${item.url}" target="_blank" rel="noopener noreferrer" 
+                           class="inline-flex items-center justify-center w-8 h-8 rounded-lg bg-slate-100 dark:bg-slate-700 group-hover:bg-sky-600 group-hover:text-white text-slate-600 dark:text-slate-300 transition-all">
+                            <i data-lucide="external-link" class="w-4 h-4"></i>
+                        </a>
+                    </div>
+                </article>
+            `).join('');
+
+            lucide.createIcons();
+        }
+
+        // Copy mechanism using document.execCommand
+        function copyToClipboard(text) {
+            const dummy = document.createElement("textarea");
+            document.body.appendChild(dummy);
+            dummy.value = text;
+            dummy.select();
+            document.execCommand("copy");
+            document.body.removeChild(dummy);
+
+            // Toast feedback
+            showToast("Tautan berhasil disalin ke clipboard!");
+        }
+
+        function showToast(message) {
+            const existingToast = document.getElementById('toastNotification');
+            if(existingToast) existingToast.remove();
+
+            const toast = document.createElement('div');
+            toast.id = 'toastNotification';
+            toast.className = 'fixed bottom-5 right-5 z-50 bg-slate-900 text-white dark:bg-white dark:text-slate-900 px-4 py-3 rounded-xl shadow-2xl text-sm font-medium flex items-center space-x-2 animate-bounce';
+            toast.innerHTML = `<i data-lucide="check-circle" class="w-4 h-4 text-emerald-400 dark:text-emerald-600"></i><span>${message}</span>`;
+            document.body.appendChild(toast);
+            lucide.createIcons();
+
+            setTimeout(() => {
+                toast.remove();
+            }, 3000);
+        }
+    </script>
+</body>
+</html>
